@@ -13,6 +13,7 @@ A production-ready MERN stack web application for cancer patients and their care
 - **Care Team Directory**: Clinician directory and community forum
 - **Audit Logging**: Comprehensive activity tracking
 
+
 ### Phase 2 AI Features
 - Symptom interpreter
 - FAQ answer bot
