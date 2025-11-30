@@ -1,6 +1,6 @@
 # Cancer Care Platform
 
-A production-ready MERN stack web application for cancer patients and their care teams, optimized for performance, accessibility, and security.
+A production-ready MERN stack web application for cancer patients and their care teams, optimised for performance, accessibility, and security.
 
 ## 🚀 Features
 
