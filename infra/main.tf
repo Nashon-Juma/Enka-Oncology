@@ -8,6 +8,7 @@ terraform {
     mongodbatlas = {
       source  = "mongodb/mongodbatlas"
       version = "~> 1.0"
+
     }
   }
 }
@@ -34,7 +35,7 @@ resource "aws_s3_bucket_versioning" "documents" {
   }
 }
 
-# Enable server-side encryption
+# Enabling server-side encryption
 resource "aws_s3_bucket_server_side_encryption_configuration" "documents" {
   bucket = aws_s3_bucket.documents.id
 
@@ -55,7 +56,7 @@ resource "aws_s3_bucket_public_access_block" "documents" {
   restrict_public_buckets = true
 }
 
-# MongoDB Atlas Cluster
+# MongoDB-Atlas-Cluster
 resource "mongodbatlas_cluster" "main" {
   project_id = var.mongodb_atlas_project_id
   name       = "${var.app_name}-${var.environment}"
